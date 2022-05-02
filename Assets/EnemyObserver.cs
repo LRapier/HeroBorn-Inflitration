@@ -8,12 +8,11 @@ public class EnemyObserver : MonoBehaviour
     [SerializeField] AudioClip[] _clips;
     private int clipIndex;
     public Transform player;
-    public EnemyBasic enemy1;
-    public EnemySpeed enemy2;
-    public EnemySpeed enemy3;
+    public Enemy enemy1;
+    public Enemy enemy2;
     private NavMeshAgent agent;
     private bool detected;
-    private int _lives = 1;
+    public int _lives = 2;
     public int EnemyLives
     {
         get { return _lives; }
@@ -34,9 +33,8 @@ public class EnemyObserver : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         player = GameObject.Find("Player").transform;
-        enemy1 = GameObject.Find("EnemyBasic").GetComponent<EnemyBasic>();
-        enemy2 = GameObject.Find("EnemySpeed").GetComponent<EnemySpeed>();
-        enemy3 = GameObject.Find("EnemySpeed").GetComponent<EnemySpeed>();
+        enemy1 = GameObject.Find("EnemyBasic").GetComponent<Enemy>();
+        enemy2 = GameObject.Find("EnemySpeed").GetComponent<Enemy>();
     }
     void Update()
     {
@@ -44,7 +42,6 @@ public class EnemyObserver : MonoBehaviour
         {
             enemy1.obsvDetected = true;
             enemy2.obsvDetected = true;
-            enemy3.obsvDetected = true;
         }
     }
     void OnCollisionEnter(Collision collision)

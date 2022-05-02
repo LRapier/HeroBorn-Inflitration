@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8998578900724871533}
-  - component: {fileID: 4512007768060613079}
   m_Layer: 0
   m_Name: Speed_Pickup
   m_TagString: Untagged
@@ -33,20 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4512007768060613079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2671369728115400716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecb66037a7b48014cab07308e8ed8390, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
-  player: {fileID: 0}
 --- !u!1 &6683480540229138736
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,6 +44,7 @@ GameObject:
   - component: {fileID: 8993232387310115301}
   - component: {fileID: 5032967823774321363}
   - component: {fileID: 7584652134799606610}
+  - component: {fileID: 8800176108587839723}
   m_Layer: 0
   m_Name: Speed_Pickup
   m_TagString: Untagged
@@ -143,6 +129,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &8800176108587839723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6683480540229138736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb66037a7b48014cab07308e8ed8390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &8032138111211090081
 GameObject:
   m_ObjectHideFlags: 0

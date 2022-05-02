@@ -42,7 +42,7 @@ public class GameBehavior : MonoBehaviour, IManager
             }
             else
             {
-                labelText = "Item found, only " + (maxItems - _itemsCollected) + " more to go!";
+                labelText = "Intel found, " + (maxItems - _itemsCollected) + " more to go.";
             }
         }
     }
@@ -85,9 +85,6 @@ public class GameBehavior : MonoBehaviour, IManager
     void Start()
     {
         Initialize();
-        InventoryList<string> inventoryList = new InventoryList<string>();
-        inventoryList.SetItem("Health Potion");
-        Debug.Log(inventoryList.item);
     }
 
     public void Initialize()

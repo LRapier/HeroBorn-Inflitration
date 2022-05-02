@@ -7,7 +7,7 @@ public class HealthPickup : MonoBehaviour
     [SerializeField] AudioClip[] _clips;
     private int clipIndex;
     public GameBehavior gameManager;
-    public int heal = 2;
+    public int heal = 3;
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameBehavior>();

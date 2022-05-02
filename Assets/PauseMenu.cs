@@ -40,6 +40,12 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("HeroBornNight");
     }
 
+    public void Briefing()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MissionBriefing");
+    }
+
     public void LoadMenu()
     {
         pauseMenuUI.SetActive(false);
